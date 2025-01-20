@@ -33,10 +33,6 @@ const AppBar = () => {
     navigate('/my-reviews'); // Navigate to the MyReviews route
   };
 
-  const handlePhonebook = () => {
-    navigate('/phonebook'); // Navigate to the Phonebook route
-  };
-
   const handleGiveFeedback = () => {
     navigate('/give-feedback'); // Navigate to the Give Feedback route (You can define the '/give-feedback' route in your app)
   };
@@ -72,11 +68,6 @@ const AppBar = () => {
         {/* Button for Create a Review */}
         <Pressable onPress={handleCreateReview}>
           <Text style={styles.tab}>Create a Review</Text>
-        </Pressable>
-
-        {/* Button for Phonebook */}
-        <Pressable onPress={handlePhonebook}>
-          <Text style={styles.tab}>Phonebook</Text> {/* Phonebook tab */}
         </Pressable>
 
         {/* Button for Give Feedback */}
